@@ -1,0 +1,8 @@
+{
+    "importMap" : "./Imports.json" ,
+
+    "tasks" : {
+        "button" : "deno run Examples/Button.ts" ,
+        "box" : "deno run Examples/Box.ts"
+    }
+}

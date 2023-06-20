@@ -1,0 +1,9 @@
+{
+    "imports" : {
+
+        "Crayon" : "https://deno.land/x/crayon@3.3.3/mod.ts" ,
+
+        "Components" : "https://deno.land/x/tui@2.0.0/src/components/mod.ts" ,
+        "TUI" : "https://deno.land/x/tui@2.0.0/mod.ts"
+    }
+}

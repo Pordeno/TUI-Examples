@@ -14,7 +14,7 @@ Small standalone examples for [TUI](https://github.com/Im-Beast/deno_tui)
 
     <br>
 
-    [![](Resources/Thumbnails/Box.png)](Examples/Box.ts)
+    [ <img src = Resources/Thumbnails/Box.png height = 200/> ](Examples/Box.ts)
 
     <br>
 
@@ -26,7 +26,7 @@ Small standalone examples for [TUI](https://github.com/Im-Beast/deno_tui)
 
     <br>
 
-    [![](Resources/Thumbnails/Button.png)](Examples/Button.ts)
+    [ <img src = Resources/Thumbnails/Button.png height = 200/> ](Examples/Button.ts)
 
     <br>
 

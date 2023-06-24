@@ -1,18 +1,33 @@
 
+/**
+ *  Uses 🖍 𝗖𝗿𝗮𝘆𝗼𝗻 for theme colors.
+ */
+
 import { crayon } from 'Crayon'
 import { Box } from 'Components'
 import { Tui } from 'TUI'
 
 
-const tui = new Tui({})
+/**
+ *  Initializes ⌨ 𝗧𝗨𝗜
+ */
 
+const tui = new Tui({})
 tui.dispatch()
 tui.run()
 
 
+/**
+ *  Reads the terminal's size statically / once.
+ */
+
 const { columns , rows } =
     tui.canvas.size.peek()
 
+
+/**
+ *  Creates a 🔴 box with the window ( tui ) as parent.
+ */
 
 const outer = new Box({
 
@@ -20,7 +35,7 @@ const outer = new Box({
     zIndex : 0 ,
 
     theme : {
-        base : crayon.bgBlue
+        base : crayon.bgRgb(255,0,0)
     },
 
     rectangle : {
@@ -34,13 +49,17 @@ const outer = new Box({
 })
 
 
+/**
+ *  Creates a ⚪ box with the 🔴 box as parent.
+ */
+
 const inner = new Box({
 
     parent : outer ,
     zIndex : 0 ,
 
     theme : {
-        base : crayon.bgLightRed
+        base : crayon.bgRgb(255,255,255)
     },
 
     rectangle : {

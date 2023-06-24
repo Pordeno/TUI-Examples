@@ -1,13 +1,25 @@
 
-import { Computed , Tui } from 'TUI'
+/**
+ *  Uses 🖍 𝗖𝗿𝗮𝘆𝗼𝗻 for theme colors.
+ */
+
+import { Computed , Theme , Tui } from 'TUI'
 import { Button } from 'Components'
 import { crayon } from 'Crayon'
 
+
+/**
+ *  Initializes ⌨ 𝗧𝗨𝗜
+ */
 
 const tui = new Tui({})
 tui.dispatch()
 tui.run()
 
+
+/**
+ *  Constructs a dynamically resized bounding box.
+ */
 
 const { floor } = Math
 
@@ -27,14 +39,24 @@ const rectangle = new Computed(() => {
 })
 
 
+/**
+ *  Constructs a component style.
+ */
+
 const theme = {
 
     disabled : crayon.bgLightBlack.black ,
     focused : crayon.bgCyan ,
     active : crayon.bgBlue ,
     base : crayon.bgLightBlue
-}
 
+} satisfies Theme
+
+
+/**
+ *  Creates a button labeled `Test Button`
+ *  and adds it to the window ( tui )
+ */
 
 new Button({
 
@@ -45,6 +67,6 @@ new Button({
     theme ,
 
     label : {
-        text : `Test Label`
+        text : `Test Button`
     }
 })
